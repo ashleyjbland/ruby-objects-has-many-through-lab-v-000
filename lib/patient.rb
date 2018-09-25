@@ -23,6 +23,7 @@ class Patient
 
   def doctors
     Appointment.all.find do |appointment|
+      appointment.patient == self
       appointment.doctor
     end
   end
