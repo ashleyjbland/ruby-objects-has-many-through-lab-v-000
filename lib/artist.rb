@@ -23,7 +23,7 @@ class Artist
 
   def genres
     Song.all.select do |song|
-      puts song.genre
+      puts song.genre.uniq
     end
   end
 
