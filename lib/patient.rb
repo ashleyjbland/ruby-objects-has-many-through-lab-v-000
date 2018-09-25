@@ -2,7 +2,7 @@ class Patient
   attr_reader :name
   @@all = []
 
-  def initalize(name)
+  def initialize(name)
     @name = name
     @@all << self
   end
