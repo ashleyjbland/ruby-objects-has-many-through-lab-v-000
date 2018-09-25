@@ -22,9 +22,9 @@ class Patient
   end
 
   def doctors
-    Appointment.all.select do |appointment|
+    Appointment.all.collect do |appointment|
       if appointment.patient == self
-        appointment.date
+        appointment.doctor
       end
     end
   end
