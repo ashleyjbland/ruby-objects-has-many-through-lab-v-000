@@ -23,7 +23,7 @@ class Artist
 
   def genres
     Song.all.detect do |song|
-      song.genre
+      self.genre
     end
   end
 
