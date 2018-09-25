@@ -23,8 +23,7 @@ class Artist
 
   def genres
     Song.all.select do |song|
-      genre = [] << song.genre
-      genre.uniq
+      song[genre]
     end
   end
 
