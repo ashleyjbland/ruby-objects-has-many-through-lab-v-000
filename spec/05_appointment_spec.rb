@@ -15,7 +15,7 @@ describe "Appointment" do
   end
 
   describe "#new" do
-    it "initializes with a patient, doctor, and date" do
+    it "initializes with a patient, date, and doctor" do
       doctor_who = Doctor.new("The Doctor")
       hevydevy = Patient.new("Devin Townsend")
 
