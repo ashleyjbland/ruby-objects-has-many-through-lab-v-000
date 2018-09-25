@@ -10,11 +10,13 @@ class Genre
   def self.all
     @@all
   end
+
+  def songs
+    Song.all.select do |song|
+      song.genre == self
+    end
+  end
 end
-
-
-The Genre class needs a class method .all that lists each genre in the class variable.
-A genre should be initialized with a name and be saved in the @@all array.
 
 The Genre class needs an instance method,
 songs, that iterates through all songs and finds the songs that belong to that genre.
