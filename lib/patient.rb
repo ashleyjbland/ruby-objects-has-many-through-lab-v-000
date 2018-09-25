@@ -11,12 +11,14 @@ class Patient
     @@all
   end
 
+  def new_appointment(date, doctor)
+    Appointment.new(date, self, doctor)
+  end
+
 end
 
 
-The Patient class needs a class variable @@all that begins as an empty array.
-The Patient class needs a class method .all that lists each patient in the class variable.
-A patient is instantiated with a name and be saved in the @@all array.
+
 The Patient class needs an instance method, new_appointment, that takes in an argument of a doctor
 and a date and creates a new appointment. The appointment should know that it belongs to the patient.
 
