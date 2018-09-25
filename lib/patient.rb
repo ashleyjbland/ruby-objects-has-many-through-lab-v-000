@@ -25,6 +25,7 @@ class Patient
     Appointment.all.select do |appointment|
       if appointment.patient == self
         appointment.date
+      end
     end
   end
 
